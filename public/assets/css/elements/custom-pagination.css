@@ -1,0 +1,47 @@
+.page-item:not(:first-child) .page-link {
+  margin-left: -1px;
+  font-size: 15px;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  font-size: 15px;
+  color: #fff;
+  background-color: #4361ee;
+  border-color: rgba(0, 0, 0, 0);
+}
+.page-item.disabled .page-link {
+  background-color: #e0e6ed;
+  font-size: 15px;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #e3e9ef;
+}
+.page-link {
+  padding: 0.3125rem 0.75rem;
+  font-size: 15px;
+}
+.page-item:first-child .page-link {
+  border-top-left-radius: 0.3125rem;
+  font-size: 15px;
+  border-bottom-left-radius: 0.3125rem;
+}
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.3125rem;
+  font-size: 15px;
+  border-bottom-right-radius: 0.3125rem;
+}
+
+.page-item {
+  margin: 0.15rem;
+  font-size: 15px;
+}
+.page-item.active {
+  position: relative;
+  font-size: 15px;
+  z-index: 5;
+  cursor: default;
+}
+.page-item.active > .page-link {
+  box-shadow: 0 0.5rem 1.125rem -0.425rem rgba(47, 51, 248, 0.9);
+  font-size: 15px;
+}
